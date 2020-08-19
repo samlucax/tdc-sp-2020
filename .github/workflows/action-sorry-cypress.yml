@@ -1,0 +1,41 @@
+on:
+  push:
+    branches: [ tdc-dash-alternativo ]
+
+name: Cypress + Sorry Cypress Dashboard
+
+jobs:
+  deploy:
+    name: Cypress Run
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        continue-on-error: true
+        with:
+          start: npm run setup
+          wait-on: 'http://localhost:3000'
+          record: true
+          parallel: true
+          ci-build-id: '${{ github.sha }}-${{ github.workflow }}-${{ github.event_name }}'
+          command: npm run test:alternative-dash
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Print Dashboard URL
+        run: |
+          echo Cypress finished with: ${{ steps.cypress.outcome }}
+          echo See results at ${{ steps.cypress.outputs.dashboardUrl }}
+
+      - name: Publish gh-pages
+        uses: JamesIves/github-pages-deploy-action@master
+        env:
+          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: mochawesome-report
+          BUILD_SCRIPT: npm run report:generate

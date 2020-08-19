@@ -6,5 +6,6 @@
     "configFile": "reporter-config.json"
   },
   "screenshotsFolder": "mochawesome-report/assets",
-  "videosFolder": "mochawesome-report/videos"
+  "videosFolder": "mochawesome-report/videos",
+  "projectId": "cso9t6"
 }

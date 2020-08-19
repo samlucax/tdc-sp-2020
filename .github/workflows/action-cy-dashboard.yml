@@ -15,6 +15,7 @@ jobs:
 
       - name: Cypress run
         uses: cypress-io/github-action@v2
+        id: cypress
         continue-on-error: true
         with:
           start: npm run setup

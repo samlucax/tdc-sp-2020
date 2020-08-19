@@ -15,6 +15,7 @@ jobs:
 
       - name: Cypress run
         uses: cypress-io/github-action@v2
+        id: cypress
         continue-on-error: true
         with:
           start: npm run setup
@@ -22,7 +23,7 @@ jobs:
           record: true
           parallel: true
           ci-build-id: '${{ github.sha }}-${{ github.workflow }}-${{ github.event_name }}'
-          command: "sed -i -e 's|api_url:.$|api_url: \"${{ secrets.CYPRESS_DIRECTOR_URL }}/\"|g' /home/runner/.cache/Cypress/*/Cypress/resources/app/packages/server/config/app.yml && npm run cy:run"
+          command: "sed -i -e 's/api_url: \"https://api.cypress.io/\"/${{ secrets.CYPRESS_DIRECTOR_URL }}///g' /home/runner/.cache/Cypress/*/Cypress/resources/app/packages/server/config/app.yml && npm run cy:run"
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

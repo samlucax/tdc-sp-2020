@@ -16,3 +16,6 @@ cypress/videos
 cypress/screenshots
 
 .nyc_output
+
+allure-report
+allure-results

@@ -20,6 +20,8 @@ import addContext from 'mochawesome/addContext'
 // Importação da config para code coverage
 import '@cypress/code-coverage/support'
 
+import '@shelex/cypress-allure-plugin';
+
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 Cypress.on("test:after:run", (test, runnable) => {

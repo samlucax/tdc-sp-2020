@@ -33,7 +33,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "cy:open": "cypress open",
-    "cy:run": "cypress run",
+    "cy:run": "cypress run --env allure=true",
     "coverage:report": "nyc report --reporter=html",
     "merge:reports": "mochawesome-merge > index.json",
     "generate:reports": "marge index.json --assetsDir cypress/videos",

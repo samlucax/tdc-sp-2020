@@ -37,6 +37,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: mochawesome-report
-          BUILD_SCRIPT: npm run report:generate
-
+          FOLDER: allure-report
+          BUILD_SCRIPT: npm run allure:report

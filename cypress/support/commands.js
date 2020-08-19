@@ -24,50 +24,21 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
-Cypress.Commands.add("createOng", () => {
-    cy.request({
-        method: 'POST',
-        url: 'http://localhost:3333/ongs',
-        body: {
-            name: "Gatos queridos",
-            email: "gatos@mail.com",
-            whatsapp: "519999999999",
-            city: "Porto Alegre",
-            uf: "RS"    
-        }
-    }).then(response => {
-        expect(response.body.id).is.not.null;
-        cy.log(response.body.id);
+// este comando é um incentivo a escrita de métodos e classes descritivos, que sirvam para os logs
+Cypress.Commands.add("logt", (message) => {
+  
+  message = message.replace(/([A-Z])/g, ' $1').trim()
+  message = message.replace(/([A-Z])/g, ' $1').toLowerCase()
+  message = message.replace(/([.])/g, ' ').trim()
 
-        Cypress.env('createdOngId', response.body.id);
-    });
+  cy.log(message)
 })
 
-Cypress.Commands.add("createNewIncident", () => {
-    Cypress.env('createdOngId')
-    cy.request({
-        method: 'POST',
-        url: 'http://localhost:3333/incidents',
-        headers: { 'Authorization': `${ Cypress.env('createdOngId') }`, },
-        body: {
-            title: "Animal com fome",
-            description: "Animal precisa de alimento para viver.",
-            value: "250"
-        }
-    }).then(response => {
-        expect(response.body.id).is.not.null;
-        cy.log(response.body.id);
+Cypress.Commands.add("prepararCarrinho", () => {
+  cy.visit('http://localhost:3000')
 
-        Cypress.env('createdIncidentId', response.body.id);
-    });
-})
-
-Cypress.Commands.add("login", () => {
-    cy.visit('http://localhost:3000/profile', {
-        onBeforeLoad: (win) => {
-            win.localStorage.clear();
-            win.localStorage.setItem('ongId', Cypress.env('createdOngId'));
-            win.localStorage.setItem('ongName', 'Gatos queridos');
-        }
-    });
+  cy.get('button')
+  .find('span')
+  .first()
+  .click();
 })

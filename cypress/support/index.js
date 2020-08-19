@@ -15,23 +15,21 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
-import '@shelex/cypress-allure-plugin';
-// you can use require:
-require('@shelex/cypress-allure-plugin');
+import addContext from 'mochawesome/addContext'
+
+// Importação da config para code coverage
+import '@cypress/code-coverage/support'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+Cypress.on("test:after:run", (test, runnable) => {
+  if(test.state === 'failed') {
+    const screenshotFileName = `${runnable.parent.title} -- ${test.title} (failed).png`;
+    addContext({ test }, `assets/${Cypress.spec.name}/${screenshotFileName}`);
+  }
 
-before(() => {
+  let videoName = Cypress.spec.name
+  videoName = `${videoName.replace('/.js.*', 'js')}.mp4`
 
-});
-
-beforeEach(() => {
-    // cy.server nao mantem estado entre os testes.
-    // https://docs.cypress.io/api/commands/server.html#State-between-tests
-
-    // cy.server - para route e request
-    cy.server();
-    cy.createOng();
-});
-
+  addContext({ test }, `videos/${videoName}`);
+})

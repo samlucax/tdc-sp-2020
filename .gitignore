@@ -1,5 +1,18 @@
 node_modules/**/*
+node_modules
 npm-debug.*
 
 # macOS
 .DS_Store
+
+#Coverage
+coverage
+
+#Cypress
+full_report.json
+mochawesome-report
+
+cypress/videos
+cypress/screenshots
+
+.nyc_output

@@ -12,8 +12,6 @@
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
 
-const allureWriter = require('@shelex/cypress-allure-plugin/writer');
-
 /**
  * @type {Cypress.PluginConfig}
  */
@@ -22,7 +20,14 @@ module.exports = (on, config) => {
   // `config` is the resolved Cypress config
 }
 
+// Adicionando config do plugin para gerar code coverage
+
 module.exports = (on, config) => {
-  allureWriter(on, config);
-  return config;
-};
+  require('@cypress/code-coverage/task')(on, config)
+  
+  // add other tasks to be registered here
+  
+  // IMPORTANT to return the config object
+  // with the any changed environment variables
+  return config
+}

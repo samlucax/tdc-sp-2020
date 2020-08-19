@@ -1,6 +1,6 @@
 on:
   push:
-    branches: [ tdc ]
+    branches: [ tdc, master ]
 
 name: Cypress + Cy Dashboard
 

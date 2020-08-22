@@ -7,7 +7,7 @@ name: Cypress + Cy Dashboard
 jobs:
   deploy:
     name: Cypress Run
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout

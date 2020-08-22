@@ -1,13 +1,13 @@
 on:
   push:
-    branches: [ tdc, master ]
+    branches: [ master ]
 
 name: Cypress + Cy Dashboard
 
 jobs:
   deploy:
     name: Cypress Run
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     steps:
       - name: Checkout

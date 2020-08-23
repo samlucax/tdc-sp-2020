@@ -24,7 +24,7 @@ jobs:
           parallel: true
           ci-build-id: '${{ github.sha }}-${{ github.workflow }}-${{ github.event_name }}'
           command: |
-            sed -i -e 's/https:\/\/api.cypress.io/${{ secrets.CYPRESS_DIRECTOR_URL }}/' /home/runner/.cache/Cypress/*/Cypress/resources/app/packages/server/config/app.yml
+            sed 's/https:\/\/api.cypress.io/${{ secrets.CYPRESS_DIRECTOR_URL }}/' /home/runner/.cache/Cypress/*/Cypress/resources/app/packages/server/config/app.yml
             npm run cy:run
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}

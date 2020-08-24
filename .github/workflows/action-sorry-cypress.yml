@@ -20,10 +20,7 @@ jobs:
         with:
           start: npm run setup
           wait-on: 'http://localhost:3000'
-          record: true
-          parallel: true
-          ci-build-id: '${{ github.sha }}-${{ github.workflow }}-${{ github.event_name }}'
-          command: npm run cy:gh
+          command: npm run cy:gh -- --parallel --record --key xxx --ci-build-id '${{ github.sha }}-${{ github.workflow }}-${{ github.event_name }}'
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

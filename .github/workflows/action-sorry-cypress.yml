@@ -24,8 +24,7 @@ jobs:
           parallel: true
           ci-build-id: '${{ github.sha }}-${{ github.workflow }}-${{ github.event_name }}'
           command: >
-            sed -i -e 's|api_url:.*$|api_url: "https://sorry-cypress-demo-director.herokuapp.com/"|g' /home/runner/.cache/Cypress/4.10.0/Cypress/resources/app/packages/server/config/app.yml
-            npm run cy:run
+            sed -i -f sorry-cypress.sed /home/runner/.cache/Cypress/4.10.0/Cypress/resources/app/packages/server/config/app.yml
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

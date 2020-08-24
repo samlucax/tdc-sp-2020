@@ -24,7 +24,7 @@ jobs:
           parallel: true
           ci-build-id: '${{ github.sha }}-${{ github.workflow }}-${{ github.event_name }}'
           command: |
-            find /home/runner/.cache/Cypress -name "app.yml" -print0
+            find /home/runner/.cache/Cypress -name "app.yml" -print0 
             npm run cy:run
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}

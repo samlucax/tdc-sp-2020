@@ -1,0 +1,1 @@
+s/https:\/\/api.cypress.io/http:\/\/sorry-cypress-tdc-1978976298.sa-east-1.elb.amazonaws.com:8080/

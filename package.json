@@ -34,6 +34,7 @@
     "eject": "react-scripts eject",
     "cy:open": "cypress open",
     "cy:run": "cypress run --env allure=true",
+    "cy:gh": "sed -i -f sorry-cypress.sed /home/runner/.cache/Cypress/4.10.0/Cypress/resources/app/packages/server/config/app.yml && cat /home/runner/.cache/Cypress/4.10.0/Cypress/resources/app/packages/server/config/app.yml && cypress run --env allure=true",
     "coverage:report": "nyc report --reporter=html",
     "merge:reports": "mochawesome-merge > index.json",
     "generate:reports": "marge index.json --assetsDir cypress/videos",

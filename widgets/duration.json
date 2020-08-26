@@ -1,0 +1,131 @@
+[ {
+  "uid" : "5aa04ebdf2f25154",
+  "name" : "Finalizar compra",
+  "time" : {
+    "start" : 1598463022721,
+    "stop" : 1598463023464,
+    "duration" : 743
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7e8f4734b68ec99a",
+  "name" : "Excluir produto do carrinho",
+  "time" : {
+    "start" : 1598463022034,
+    "stop" : 1598463022704,
+    "duration" : 670
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "17d39a087e3a44ae",
+  "name" : "Visualizar produtos adicionados ao carrinho",
+  "time" : {
+    "start" : 1598463016975,
+    "stop" : 1598463019675,
+    "duration" : 2700
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6678b4332edc05e9",
+  "name" : "Visualizar home sem produtos disponíveis em estoque",
+  "time" : {
+    "start" : 1598463038958,
+    "stop" : 1598463039023,
+    "duration" : 65
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f2c2f0481eb317db",
+  "name" : "Incrementar a quantidade de produto no carrinho",
+  "time" : {
+    "start" : 1598463021268,
+    "stop" : 1598463022026,
+    "duration" : 758
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5bf647765ab53b7",
+  "name" : "Visualizar produtos que possuem estoque",
+  "time" : {
+    "start" : 1598463037290,
+    "stop" : 1598463038874,
+    "duration" : 1584
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c91f82af1359819b",
+  "name" : "Adicionar produto e permanecer na home",
+  "time" : {
+    "start" : 1598463039732,
+    "stop" : 1598463039733,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "acaa74f6eefd214",
+  "name" : "Visualizar carrinho sem produtos adicionados",
+  "time" : {
+    "start" : 1598463019735,
+    "stop" : 1598463020355,
+    "duration" : 620
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f2602ff5a2106758",
+  "name" : "Tentar incrementar a quantidade de produto com estoque esgotado",
+  "time" : {
+    "start" : 1598463020361,
+    "stop" : 1598463021257,
+    "duration" : 896
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "75bc000b64b0ffbb",
+  "name" : "Tentar adicionar produto com estoque zerado ao carrinho",
+  "time" : {
+    "start" : 1598463039735,
+    "stop" : 1598463040452,
+    "duration" : 717
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "abdcfc8051ae1e75",
+  "name" : "Visualizar home com apenas um produto disponível",
+  "time" : {
+    "start" : 1598463038901,
+    "stop" : 1598463038947,
+    "duration" : 46
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cf5094f6b54a913a",
+  "name" : "Adicionar produto e ir ao carrinho",
+  "time" : {
+    "start" : 1598463039031,
+    "stop" : 1598463039718,
+    "duration" : 687
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3c26c9d0acff7619",
+  "name" : "Tentar finalizar compra sem produtos adicionados",
+  "time" : {
+    "start" : 1598463023473,
+    "stop" : 1598463023881,
+    "duration" : 408
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

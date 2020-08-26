@@ -1,0 +1,70 @@
+{
+  "uid" : "6678b4332edc05e9",
+  "name" : "Visualizar home sem produtos disponíveis em estoque",
+  "fullName" : "Visualizar home sem produtos disponíveis em estoque",
+  "historyId" : "d9a355c4929d183a04dcfae2efb55063",
+  "time" : {
+    "start" : 1598463038958,
+    "stop" : 1598463039023,
+    "duration" : 65
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "log (\"\n          ⚠️ Could not find any coverage information in your application\n          by looking at the window coverage object.\n          Did you forget to instrument your application?\n          See [code-coverage#instrument-your-application](https://github.com/cypress-io/code-coverage#instrument-your-application)\n         `[@cypress/code-coverage]`\")",
+      "time" : {
+        "start" : 1598463039026,
+        "stop" : 1598463039027,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "Home"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6678b4332edc05e9.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,174 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "Tentar finalizar compra sem produtos adicionados",
+    "uid" : "3c26c9d0acff7619",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1598463023473,
+      "stop" : 1598463023881,
+      "duration" : 408
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Visualizar produtos adicionados ao carrinho",
+    "uid" : "17d39a087e3a44ae",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1598463016975,
+      "stop" : 1598463019675,
+      "duration" : 2700
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Finalizar compra",
+    "uid" : "5aa04ebdf2f25154",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1598463022721,
+      "stop" : 1598463023464,
+      "duration" : 743
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Excluir produto do carrinho",
+    "uid" : "7e8f4734b68ec99a",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1598463022034,
+      "stop" : 1598463022704,
+      "duration" : 670
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Visualizar home com apenas um produto disponível",
+    "uid" : "abdcfc8051ae1e75",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1598463038901,
+      "stop" : 1598463038947,
+      "duration" : 46
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Tentar adicionar produto com estoque zerado ao carrinho",
+    "uid" : "75bc000b64b0ffbb",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1598463039735,
+      "stop" : 1598463040452,
+      "duration" : 717
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Adicionar produto e ir ao carrinho",
+    "uid" : "cf5094f6b54a913a",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1598463039031,
+      "stop" : 1598463039718,
+      "duration" : 687
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Visualizar produtos que possuem estoque",
+    "uid" : "5bf647765ab53b7",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1598463037290,
+      "stop" : 1598463038874,
+      "duration" : 1584
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Adicionar produto e permanecer na home",
+    "uid" : "c91f82af1359819b",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1598463039732,
+      "stop" : 1598463039733,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Visualizar carrinho sem produtos adicionados",
+    "uid" : "acaa74f6eefd214",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1598463019735,
+      "stop" : 1598463020355,
+      "duration" : 620
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Tentar incrementar a quantidade de produto com estoque esgotado",
+    "uid" : "f2602ff5a2106758",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1598463020361,
+      "stop" : 1598463021257,
+      "duration" : 896
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Incrementar a quantidade de produto no carrinho",
+    "uid" : "f2c2f0481eb317db",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1598463021268,
+      "stop" : 1598463022026,
+      "duration" : 758
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Visualizar home sem produtos disponíveis em estoque",
+    "uid" : "6678b4332edc05e9",
+    "parentUid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+    "status" : "passed",
+    "time" : {
+      "start" : 1598463038958,
+      "stop" : 1598463039023,
+      "duration" : 65
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ],
+  "name" : "timeline"
+}

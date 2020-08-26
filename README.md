@@ -6,11 +6,5 @@
 ### Executar os testes:
 - `npm run cy:run`
  
- ### Home
- ![Home Page](image1.png?raw=true "Home")
- 
- 
- ### Carrinho
-![Cart Page](image2.png?raw=true "Carrinho")
-
-
+### Home
+<p align="center"><img src="homespecjs.gif" width="90%"/></p>
